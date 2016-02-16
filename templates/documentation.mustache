@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html class="docs-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="open-nav">
+<header class="navbar navbar-fixed-top navbar-inverse container-fluid">
+    <div class="navbar-header">
+        <label class="open-nav" for="open-nav"></label>
+        <a class="navbar-brand" href="/">
+            <strong>Ramda</strong>
+            <span class="version">v0.19.1</span>
+        </a>
+    </div>
+    <div class="navbar-left">
+        <ul class="nav navbar-nav">
+            <li><a href="../">Home</a></li>
+            <li class="active"><a href="#">Documentation</a></li>
+            <li><a href="/repl?v=0.19.1">Try Ramda</a></li>
+            <li><a href="https://github.com/ramda/ramda">GitHub</a></li>
+        </ul>
+    </div>
+</header>
+<aside class="sidebar container-fluid">
+    <div class="form-group has-feedback filter">
+        <input class="form-control"
+               tabindex="1"
+               id="name-filter"
+               placeholder="Filter"
+               type="text"
+               data-bind="textInput: filter"
+               autofocus
+                >
+            <span class="form-control-feedback">
+                <span class="glyphicon glyphicon-search"></span>
+            </span>
+    </div>
+    <ul class="nav nav-pills nav-stacked toc">
+
+        {{#cards}}
+        <li class="func" data-name="{{name}}" data-category="{{category}}">
+            <a href="#{{name}}">
+                {{name}}
+                    <span data-category="{{category}}" class="label label-category pull-right"
+                            >{{category}}</span>
+            </a>
+        </li>
+            {{/cards}}
+
+    </ul>
+</aside>
+<main class="container-fluid">
+
+    {{#cards}}
+    <section class="card" id="{{name}}">
+        <h2>
+            <a tabindex="2" class="name" href="#{{name}}">{{name}}</a>
+                <span class="pull-right">
+                        <span class="label label-category">{{category}}</span>
+                        <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/add.js"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+        {{#has_params}}
+        <div><code>{{signature}}</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    {{#input_params}}
+                    <li class="list-group-item">
+                        <span class="type">{{type}}</span>
+                        <span class="name">{{id}}</span>
+                        <span class="description">{{desc}}</span>
+                    </li>
+                    {{/input_params}}
+                </ul>
+                {{#has_return}}
+                <div class="panel-body">
+                {{#return_value}}
+                    <span class="returns">Returns</span>
+                    <span class="type">{{type}}</span>
+                    <span class="description">{{desc}}</span>
+                {{/return_value}}
+                </div>
+                {{/has_return}}
+            </div>
+        </div>
+        {{/has_params}}
+
+        <div class="description"><p>{{description}}</p>
+        </div>
+
+        {{#has_examples}}
+            {{#examples}}
+	           <pre><code class="hljs javascript">{{code}}</code></pre>
+            {{/examples}}
+        {{/has_examples}}
+    </section>
+        {{/cards}}
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>

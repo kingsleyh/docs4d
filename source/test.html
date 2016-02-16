@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html class="docs-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ramda Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="open-nav">
+<header class="navbar navbar-fixed-top navbar-inverse container-fluid">
+    <div class="navbar-header">
+        <label class="open-nav" for="open-nav"></label>
+        <a class="navbar-brand" href="/">
+            <strong>Ramda</strong>
+            <span class="version">v0.19.1</span>
+        </a>
+    </div>
+    <div class="navbar-left">
+        <ul class="nav navbar-nav">
+            <li><a href="..">Home</a></li>
+            <li class="active"><a href="#">Documentation</a></li>
+            <li><a href="/repl?v=0.19.1">Try Ramda</a></li>
+            <li><a href="https://github.com/ramda/ramda">GitHub</a></li>
+        </ul>
+    </div>
+</header>
+<aside class="sidebar container-fluid">
+    <div class="form-group has-feedback filter">
+        <input class="form-control"
+               tabindex="1"
+               id="name-filter"
+               placeholder="Filter"
+               type="text"
+               data-bind="textInput: filter"
+               autofocus
+                >
+            <span class="form-control-feedback">
+                <span class="glyphicon glyphicon-search"></span>
+            </span>
+    </div>
+    <ul class="nav nav-pills nav-stacked toc">
+
+        <li class="func" data-name="add" data-category="Math">
+            <a href="#add">
+                add
+                    <span data-category="Math" class="label label-category pull-right"
+                            >Math</span>
+            </a>
+        </li>
+        <li class="func" data-name="addIndex" data-category="Function">
+            <a href="#addIndex">
+                addIndex
+                    <span data-category="Function" class="label label-category pull-right"
+                            >Function</span>
+            </a>
+        </li>
+
+    </ul>
+</aside>
+<main class="container-fluid">
+
+    <section class="card" id="add">
+        <h2>
+            <a tabindex="2" class="name" href="#add">add</a>
+                <span class="pull-right">
+                        <span class="label label-category">Math</span>
+                        <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/add.js"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+
+        <div><code>Number → Number → Number</code></div>
+
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">Number</span>
+                        <span class="name">a</span>
+                        <span class="description"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="type">Number</span>
+                        <span class="name">b</span>
+                        <span class="description"></span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">Number</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <p><small>Added in v0.1.0</small></p>
+
+        <div class="description"><p>Adds two numbers. Equivalent to <code>a + b</code> but curried.</p>
+        </div>
+
+
+        <div class="see">
+            See also
+            <a href="#subtract">subtract</a>.
+        </div>
+
+	    <pre><button class="try-repl">Try in REPL</button><code class="hljs javascript">R.add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);       <span class="hljs-comment">//=&gt;  5</span>
+            R.add(<span class="hljs-number">7</span>)(<span class="hljs-number">10</span>);      <span class="hljs-comment">//=&gt; 17</span></code></pre>
+    </section>
+    <section class="card" id="addIndex">
+        <h2>
+            <a tabindex="2" class="name" href="#addIndex">addIndex</a>
+                <span class="pull-right">
+                        <span class="label label-category">Function</span>
+                        <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/addIndex.js"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+
+        <div><code>((a … → b) … → [a] → *) → (a …, Int, [a] → b) … → [a] → *)</code></div>
+
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">function</span>
+                        <span class="name">fn</span>
+                            <span class="description"><p>A list iteration function that does not pass index or list to its callback</p>
+</span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">function</span>
+                        <span class="description"><p>An altered list iteration function that passes (item, index, list) to its callback</p>
+</span>
+                </div>
+            </div>
+        </div>
+
+        <p><small>Added in v0.15.0</small></p>
+
+        <div class="description"><p>Creates a new list iteration function from an existing one by adding two new
+            parameters to its callback function: the current index, and the entire list.</p>
+            <p>This would turn, for instance, Ramda&#39;s simple <code>map</code> function into one that
+                more closely resembles <code>Array.prototype.map</code>. Note that this will only work
+                for functions in which the iteration callback function is the first
+                parameter, and where the list is the last parameter. (This latter might be
+                unimportant if the list parameter is not used.)</p>
+        </div>
+
+
+
+	    <pre><button class="try-repl">Try in REPL</button><code class="hljs javascript"><span class="hljs-keyword">var</span> mapIndexed = R.addIndex(R.map);
+            mapIndexed((val, idx) =&gt; idx + <span class="hljs-string">'-'</span> + val, [<span class="hljs-string">'f'</span>, <span class="hljs-string">'o'</span>, <span class="hljs-string">'o'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'a'</span>, <span class="hljs-string">'r'</span>]);
+            <span class="hljs-comment">//=&gt; ['0-f', '1-o', '2-o', '3-b', '4-a', '5-r']</span></code></pre>
+    </section>
+
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>

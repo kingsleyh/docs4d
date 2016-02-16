@@ -1,0 +1,9 @@
+{
+	"name": "docs4d",
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2016, kings",
+	"authors": ["kings"],
+	"dependencies": {
+	  "mustache-d": "~>0.1.1"
+	}
+}
