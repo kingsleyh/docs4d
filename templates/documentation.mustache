@@ -60,7 +60,9 @@
             <a tabindex="2" class="name" href="#{{name}}">{{name}}</a>
                 <span class="pull-right">
                         <span class="label label-category">{{category}}</span>
-                        <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/add.js"><small class="glyphicon glyphicon-new-window"></small></a>
+                        {{#has_gh}}
+                          <a target="_blank" title="View source on GitHub" href="{{gh}}"><small class="glyphicon glyphicon-new-window"></small></a>
+                        {{/has_gh}}
                 </span>
         </h2>
 

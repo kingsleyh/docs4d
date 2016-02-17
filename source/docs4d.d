@@ -5,6 +5,9 @@ import std.file;
 import mustache;
 import std.algorithm;
 import std.array;
+import std.string;
+import std.regex;
+import std.range;
 import dmarkdown;
 
 struct Card
@@ -15,6 +18,7 @@ struct Card
   Param[] params;
   Example[] examples;
   Link[] links;
+  string fileLocation;
 }
 
 struct Param
@@ -67,10 +71,12 @@ class DocGen
   alias MustacheEngine!(string) Mustache;
   Mustache mustache;
   Mustache.Context context;
+  string githubUrl;
 
-  this(string name, string ver){
+  this(string name, string ver, string githubUrl = ""){
      this.name = name;
      this.ver = ver;
+     this.githubUrl = githubUrl;
      this.context = new Mustache.Context;
      mustache.path  = "templates";
      mustache.level = Mustache.CacheLevel.no;
@@ -147,6 +153,12 @@ class DocGen
             sub4["url"] = link.url;
           }
        }
+
+       if(!card.fileLocation.empty){
+         sub.useSection("has_gh");
+         sub["gh"] = findGHLine(card);
+       }
+
      }
 
      // make target dir
@@ -174,6 +186,19 @@ class DocGen
 
      }
 
+  }
+
+  private string findGHLine(Card card){
+    auto file = File(card.fileLocation);
+
+//     foreach (lineNum, line; file.byLine().enumerate(1)){
+//       writeln(lineNum, " : ", line);
+//     }
+
+    auto method = regex(r"^.+this\(");
+    auto lineNumber = file.byLine().countUntil!(line => !!line.matchFirst(method));
+    writeln(lineNumber);
+    return "";
   }
 
 }

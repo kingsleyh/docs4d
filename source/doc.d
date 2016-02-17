@@ -7,6 +7,7 @@ void main()
        Card("new","Creates a new instance of the DocGen class.","DocGen",[
          Param("string","name","(project name)",ParamType.INPUT),
          Param("string","version","(project version)",ParamType.INPUT),
+         Param("string","githubUrl","(base url to github branch e.g. master)",ParamType.INPUT),
          Param("DocGen","","",ParamType.OUTPUT)
          ],[
            Example(
@@ -16,7 +17,7 @@ void main()
            "     .withPages(pages)       \n"
            "     .generate();            \n"
            )
-         ]),
+         ], [],"source/docs4d.d"),
        Card("withLinks","Sets the links on the top navbar.","DocGen", [
          Param("Link[]","links","(an array of Link structs)",ParamType.INPUT),
          Param("DocGen","","",ParamType.OUTPUT)
@@ -137,7 +138,7 @@ void main()
                                ],"README.md")
      ];
 
-     new DocGen("Docs4d","v0.0.1")
+     new DocGen("Docs4d","v0.0.1","https://github.com/kingsleyh/docs4d/blob/master")
      .withLinks(links)
      .withCards(cards)
      .withPages(pages)
