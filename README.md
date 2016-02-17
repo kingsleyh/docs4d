@@ -25,6 +25,7 @@ Here is the code that generated this documentation:
                Card("new","Creates a new instance of the DocGen class.","DocGen",[
                  Param("string","name","(project name)",ParamType.INPUT),
                  Param("string","version","(project version)",ParamType.INPUT),
+                 Param("string","githubUrl","(base url to github branch e.g. master)",ParamType.INPUT),
                  Param("DocGen","","",ParamType.OUTPUT)
                  ],[
                    Example(
@@ -34,7 +35,7 @@ Here is the code that generated this documentation:
                    "     .withPages(pages)       \n"
                    "     .generate();            \n"
                    )
-                 ]),
+                 ], [],"source/docs4d.d"),
                Card("withLinks","Sets the links on the top navbar.","DocGen", [
                  Param("Link[]","links","(an array of Link structs)",ParamType.INPUT),
                  Param("DocGen","","",ParamType.OUTPUT)
@@ -48,7 +49,7 @@ Here is the code that generated this documentation:
                    "    ];                                                         \n"
                    "new DocGen(\"Docs4d\",\"v0.0.1\").withLinks(links);            \n"
                  )],
-                 [Link("Link","#Link")]
+                 [Link("Link","#Link")],"source/docs4d.d"
                  ),
                   Card("withCards","Specifies the documentation for each item.","DocGen", [
                     Param("Card[]","cards","(an array of Card structs)",ParamType.INPUT),
@@ -72,7 +73,7 @@ Here is the code that generated this documentation:
                       "         ],[Link(\"Card\",\"#Card\")])];                                        \n"
                       "new DocGen(\"Docs4d\",\"v0.0.1\").withCards(cards);                             \n"
                     )
-                    ],[Link("Card","#Card"),Link("Param","#Param"),Link("Example","#Example")]),
+                    ],[Link("Card","#Card"),Link("Param","#Param"),Link("Example","#Example")],"source/docs4d.d"),
                     Card("withPages","Specifies additional pages.","DocGen", [
                       Param("Page[]","pages","(an array of Page structs)",ParamType.INPUT),
                       Param("DocGen","","",ParamType.OUTPUT)
@@ -87,8 +88,8 @@ Here is the code that generated this documentation:
                       "    ],\"README.md\")                                         \n"
                       "];                                                           \n"
                      )
-                      ],[Link("Page","#Page"), Link("Link","#Link")]),
-                    Card("generate", "generates the html files", "void"),
+                      ],[Link("Page","#Page"), Link("Link","#Link")],"source/docs4d.d"),
+                    Card("generate", "generates the html files", "void",[],[],[],"source/docs4d.d"),
                     Card("Link", "Struct that holds link information.", "Link", [
                       Param("string","text", "", ParamType.INPUT),
                       Param("string","url", "", ParamType.INPUT),
@@ -96,7 +97,7 @@ Here is the code that generated this documentation:
                       Param("Link","","",ParamType.OUTPUT)
                     ],[
                       Example("Link(\"Home\",\"home.html\")")
-                    ],[Link("withLinks","#withLinks"), Link("withPages","#withPages"), Link("withCards","#withCards")]),
+                    ],[Link("withLinks","#withLinks"), Link("withPages","#withPages"), Link("withCards","#withCards")],"source/docs4d.d"),
                     Card("Card","Struct that holds documentation information.", "Card",[
                       Param("string","name","", ParamType.INPUT),
                       Param("string","description","", ParamType.INPUT),
@@ -120,7 +121,7 @@ Here is the code that generated this documentation:
                       "           )                                                                    \n"
                       "         ])];                                                                   \n"
                       )
-                    ],[Link("withCards","#withCards")]),
+                    ],[Link("withCards","#withCards")],"source/docs4d.d"),
                     Card("Param","Struct that holds parameter info.","Param",[
                       Param("string","type","",ParamType.INPUT),
                       Param("string","id","",ParamType.INPUT),
@@ -129,16 +130,16 @@ Here is the code that generated this documentation:
                       Param("Param","","",ParamType.OUTPUT)
                     ],[
                      Example("Param(\"string\",\"name\",\"(project name)\",ParamType.INPUT)")
-                    ],[Link("Card","#Card"),Link("ParamType","#ParamType")]),
+                    ],[Link("Card","#Card"),Link("ParamType","#ParamType")],"source/docs4d.d"),
                     Card("Example","Struct that holds example info.","Example",[
                       Param("string","code","",ParamType.INPUT),
                       Param("Example","","",ParamType.OUTPUT)
                     ],[
                      Example("Example(\"auto doc = new DocGen(\\\"Docs4d\\\",\\\"v0.0.1\\\")\")")
-                    ]),
+                    ],[],"source/docs4d.d"),
                     Card("ParamType","Struct that holds parameter type info for params.","ParamType",[
                      Param("ParamType","","(ParamType.INPUT,ParamType.OUTPUT)",ParamType.OUTPUT)
-                    ],[Example("Param(\"string\",\"name\",\"(project name)\",ParamType.INPUT)")],[Link("Param","#Param")])
+                    ],[Example("Param(\"string\",\"name\",\"(project name)\",ParamType.INPUT)")],[Link("Param","#Param")],"source/docs4d.d")
              ];
         
              auto links = [
@@ -155,12 +156,13 @@ Here is the code that generated this documentation:
                                        ],"README.md")
              ];
         
-             new DocGen("Docs4d","v0.0.1")
+             new DocGen("Docs4d","v0.0.1","https://github.com/kingsleyh/docs4d/blob/master")
              .withLinks(links)
              .withCards(cards)
              .withPages(pages)
              .generate();
         
         }
+
         
 
