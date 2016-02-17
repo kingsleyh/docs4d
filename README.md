@@ -4,7 +4,7 @@ This project generates documentation for code. Rather than using comments embedd
 using it's DSL-like API. I didn't want to litter my code with comments and this is my alternative approach based on a similar idea by the great and powerful [Stacy Curl](https://github.com/stacycurl)
 
 The output templates have been re-purposed from the [Ramdajs](http://ramdajs.com/0.19.1/docs/) project. So really I didn't do much since I took the general idea 
-from Stacy and the html/css/javascript from Ramda.
+from Stacy and the html/css/javascript from Ramdajs.
 
 ### API Documentation
 
