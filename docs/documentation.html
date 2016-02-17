@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Erik Documentation</title>
+    <title>Docs4d Documentation</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -12,15 +12,15 @@
     <div class="navbar-header">
         <label class="open-nav" for="open-nav"></label>
         <a class="navbar-brand" href="/">
-            <strong>Erik</strong>
-            <span class="version">v0.01</span>
+            <strong>Docs4d</strong>
+            <span class="version">v0.0.1</span>
         </a>
     </div>
     <div class="navbar-left">
         <ul class="nav navbar-nav">
                 <li class=""><a href="home.html">Home</a></li>
                 <li class="active"><a href="#">Documentation</a></li>
-                <li class=""><a href="https://github.com/kingsleyh/erik">Github</a></li>
+                <li class=""><a href="https://github.com/kingsleyh/docs4d">Github</a></li>
         </ul>
     </div>
 </header>
@@ -40,25 +40,32 @@
     </div>
     <ul class="nav nav-pills nav-stacked toc">
 
-        <li class="func" data-name="getStatus" data-category="Session">
-            <a href="#getStatus">
-                getStatus
-                    <span data-category="Session" class="label label-category pull-right"
-                            >Session</span>
+        <li class="func" data-name="new" data-category="DocGen">
+            <a href="#new">
+                new
+                    <span data-category="DocGen" class="label label-category pull-right"
+                            >DocGen</span>
             </a>
         </li>
-        <li class="func" data-name="test" data-category="Session">
-            <a href="#test">
-                test
-                    <span data-category="Session" class="label label-category pull-right"
-                            >Session</span>
+        <li class="func" data-name="withLinks" data-category="DocGen">
+            <a href="#withLinks">
+                withLinks
+                    <span data-category="DocGen" class="label label-category pull-right"
+                            >DocGen</span>
             </a>
         </li>
-        <li class="func" data-name="oops" data-category="Session">
-            <a href="#oops">
-                oops
-                    <span data-category="Session" class="label label-category pull-right"
-                            >Session</span>
+        <li class="func" data-name="withCards" data-category="DocGen">
+            <a href="#withCards">
+                withCards
+                    <span data-category="DocGen" class="label label-category pull-right"
+                            >DocGen</span>
+            </a>
+        </li>
+        <li class="func" data-name="withPages" data-category="DocGen">
+            <a href="#withPages">
+                withPages
+                    <span data-category="DocGen" class="label label-category pull-right"
+                            >DocGen</span>
             </a>
         </li>
 
@@ -66,91 +73,186 @@
 </aside>
 <main class="container-fluid">
 
-    <section class="card" id="getStatus">
+    <section class="card" id="new">
         <h2>
-            <a tabindex="2" class="name" href="#getStatus">getStatus</a>
+            <a tabindex="2" class="name" href="#new">new</a>
                 <span class="pull-right">
-                        <span class="label label-category">Session</span>
+                        <span class="label label-category">DocGen</span>
                         <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/add.js"><small class="glyphicon glyphicon-new-window"></small></a>
                 </span>
         </h2>
 
-        <div><code>ServerStatus</code></div>
-
-        <div class="params" data-expanded="false">
-            <a href="#expand" class="toggle-params">Parameters</a>
-            <div class="details panel panel-default">
-                <ul class="list-group">
-                </ul>
-                <div class="panel-body">
-                    <span class="returns">Returns</span>
-                    <span class="type">ServerStatus</span>
-                    <span class="description">The status of the server</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="description"><p>some description</p>
-        </div>
-
-
-    </section>
-    <section class="card" id="test">
-        <h2>
-            <a tabindex="2" class="name" href="#test">test</a>
-                <span class="pull-right">
-                        <span class="label label-category">Session</span>
-                        <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/add.js"><small class="glyphicon glyphicon-new-window"></small></a>
-                </span>
-        </h2>
-
-
-        <div class="description"><p>some description</p>
-        </div>
-
-
-    </section>
-    <section class="card" id="oops">
-        <h2>
-            <a tabindex="2" class="name" href="#oops">oops</a>
-                <span class="pull-right">
-                        <span class="label label-category">Session</span>
-                        <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/add.js"><small class="glyphicon glyphicon-new-window"></small></a>
-                </span>
-        </h2>
-
-        <div><code>Server → Resp → String</code></div>
+        <div><code>string → string → DocGen</code></div>
 
         <div class="params" data-expanded="false">
             <a href="#expand" class="toggle-params">Parameters</a>
             <div class="details panel panel-default">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <span class="type">Server</span>
-                        <span class="name">server</span>
-                        <span class="description">The status of the server</span>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="type">Resp</span>
+                        <span class="type">string</span>
                         <span class="name">name</span>
-                        <span class="description">The resp</span>
+                        <span class="description">(project name)</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="type">string</span>
+                        <span class="name">version</span>
+                        <span class="description">(project version)</span>
                     </li>
                 </ul>
                 <div class="panel-body">
                     <span class="returns">Returns</span>
-                    <span class="type">String</span>
-                    <span class="description">The return string</span>
+                    <span class="type">DocGen</span>
+                    <span class="description"></span>
                 </div>
             </div>
         </div>
 
-        <div class="description"><p>some oops description</p>
+        <div class="description"><p>creates a new instance of the DocGen class</p>
         </div>
 
             
-	           <pre><code class="hljs javascript">auto status = getStatus();</code></pre>
+	           <pre><code class="hljs javascript">new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;)
+     .withLinks(links)       
+     .withCards(cards)       
+     .withPages(pages)       
+     .generate();            
+</code></pre>
+        
+    </section>
+    <section class="card" id="withLinks">
+        <h2>
+            <a tabindex="2" class="name" href="#withLinks">withLinks</a>
+                <span class="pull-right">
+                        <span class="label label-category">DocGen</span>
+                        <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/add.js"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
 
-	           <pre><code class="hljs javascript">auto name = getName();</code></pre>
+        <div><code>Link[] → DocGen</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">Link[]</span>
+                        <span class="name">links</span>
+                        <span class="description">(an array of Link structs)</span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">DocGen</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="description"><p>sets the links on the top navbar</p>
+        </div>
+
+            
+	           <pre><code class="hljs javascript">auto links = [                                                 
+      Link(&quot;Home&quot;,&quot;home.html&quot;),                            
+      Link(&quot;Documentation&quot;,&quot;#&quot;,&quot;active&quot;),                
+      Link(&quot;Github&quot;,&quot;https://github.com/kingsleyh/docs4d&quot;) 
+    ];                                                         
+new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;).withLinks(links);            
+</code></pre>
+        
+    </section>
+    <section class="card" id="withCards">
+        <h2>
+            <a tabindex="2" class="name" href="#withCards">withCards</a>
+                <span class="pull-right">
+                        <span class="label label-category">DocGen</span>
+                        <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/add.js"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+        <div><code>Card[] → DocGen</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">Card[]</span>
+                        <span class="name">cards</span>
+                        <span class="description">(an array of Card structs)</span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">DocGen</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="description"><p>specifies the documentation for each item</p>
+        </div>
+
+            
+	           <pre><code class="hljs javascript">auto cards = [                                                                 
+       Card(&quot;new&quot;,&quot;creates a new instance of the DocGen class&quot;,&quot;DocGen&quot;,[ 
+         Param(&quot;string&quot;,&quot;name&quot;,&quot;(project name)&quot;,ParamType.INPUT),         
+         Param(&quot;string&quot;,&quot;version&quot;,&quot;(project version)&quot;,ParamType.INPUT),   
+         Param(&quot;DocGen&quot;,&quot;&quot;,&quot;&quot;,ParamType.OUTPUT)                           
+         ],[                                                                    
+           Example(                                                             
+           &quot;new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;)\n&quot;                             
+           &quot;     .withLinks(links)       \n&quot;                                 
+           &quot;     .withCards(cards)       \n&quot;                                 
+           &quot;     .withPages(pages)       \n&quot;                                 
+           &quot;     .generate();            \n&quot;                                 
+           )                                                                    
+         ])];                                                                   
+new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;).withCards(cards);                             
+</code></pre>
+        
+    </section>
+    <section class="card" id="withPages">
+        <h2>
+            <a tabindex="2" class="name" href="#withPages">withPages</a>
+                <span class="pull-right">
+                        <span class="label label-category">DocGen</span>
+                        <a target="_blank" title="View source on GitHub" href="https://github.com/ramda/ramda/tree/v0.19.1/src/add.js"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+        <div><code>Page[] → DocGen</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">Page[]</span>
+                        <span class="name">pages</span>
+                        <span class="description">(an array of Page structs)</span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">DocGen</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="description"><p>specifies additional pages</p>
+        </div>
+
+            
+	           <pre><code class="hljs javascript">auto pages = [                                                        
+           Page(&quot;home.html&quot;,&quot;Home&quot;,[                              
+           Link(&quot;Home&quot;,&quot;home.html&quot;,&quot;active&quot;),                   
+           Link(&quot;Documentation&quot;,&quot;documentation.html&quot;),            
+           Link(&quot;Github&quot;,&quot;https://github.com/kingsleyh/docs4d&quot;)   
+          ],&quot;README.md&quot;)                                            
+             ];                                                       
+</code></pre>
         
     </section>
 

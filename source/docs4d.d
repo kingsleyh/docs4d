@@ -156,7 +156,6 @@ class DocGen
                 subLinks["url"] = link.url;
                 subLinks["active"] = link.active;
             });
-//            context["page_html"] = (string str) { return page.html(); };
             context["page_html"] = page.html();
 
         std.file.write("docs/" ~ page.filename,mustache.render("page", context));
