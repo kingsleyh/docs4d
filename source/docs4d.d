@@ -8,6 +8,7 @@ import std.array;
 import std.string;
 import std.regex;
 import std.range;
+import std.conv;
 import dmarkdown;
 
 struct Card
@@ -191,14 +192,11 @@ class DocGen
   private string findGHLine(Card card){
     auto file = File(card.fileLocation);
 
-//     foreach (lineNum, line; file.byLine().enumerate(1)){
-//       writeln(lineNum, " : ", line);
-//     }
+    auto methName = card.name == "new" ? "this" : card.name;
 
-    auto method = regex(r"^.+this\(");
+    auto method = regex(r"^.+" ~ methName ~ r"\(*");
     auto lineNumber = file.byLine().countUntil!(line => !!line.matchFirst(method));
-    writeln(lineNumber);
-    return "";
+    return this.githubUrl ~ "/" ~ card.fileLocation ~ "#L" ~ to!string(lineNumber);
   }
 
 }
