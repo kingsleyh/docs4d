@@ -92,7 +92,19 @@
         </div>
         {{/has_params}}
 
-        <div class="description"><p>{{description}}</p>
+        <div class="description"><p>{{{description}}}</p>
+
+        {{#has_see_also}}
+            <div class="see">
+             See also:
+            <ul>
+            {{#see_also}}
+              <li><a href="{{url}}">{{text}}</a></li>
+            {{/see_also}}
+            </ul>
+            </div>
+        {{/has_see_also}}
+
         </div>
 
         {{#has_examples}}

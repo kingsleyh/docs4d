@@ -14,6 +14,7 @@ struct Card
   string category;
   Param[] params;
   Example[] examples;
+  Link[] links;
 }
 
 struct Param
@@ -136,6 +137,15 @@ class DocGen
            auto sub4 = sub.addSubContext("examples");
            sub4["code"] = example.code;
          }
+       }
+
+       if(card.links.length > 0){
+          sub.useSection("has_see_also");
+          foreach(ref link ; card.links){
+            auto sub4 = sub.addSubContext("see_also");
+            sub4["text"] = link.text;
+            sub4["url"] = link.url;
+          }
        }
      }
 
