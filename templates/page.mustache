@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="home-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{name}}</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="open-nav">
+<header class="navbar navbar-fixed-top navbar-inverse container-fluid">
+    <div class="navbar-header">
+        <label class="open-nav" for="open-nav"></label>
+        <a class="navbar-brand" href="#">
+            <strong>{{name}}</strong>
+            <span class="version">{{ver}}</span>
+        </a>
+    </div>
+    <div class="navbar-left">
+        <ul class="nav navbar-nav">
+            {{#page_links}}
+                <li class="{{active}}"><a href="{{url}}">{{text}}</a></li>
+            {{/page_links}}
+        </ul>
+    </div>
+</header>
+<main class="container">
+    <article>
+        {{{page_html}}}
+    </article>
+</main>
+</body>
+</html>

@@ -4,6 +4,17 @@
 	"copyright": "Copyright © 2016, kings",
 	"authors": ["kings"],
 	"dependencies": {
-	  "mustache-d": "~>0.1.1"
+	  "mustache-d": "~>0.1.1",
+	  "dmarkdown": "~>0.2.1"
+	},
+  "configurations": [
+	{
+	  "name": "docs4d",
+	  "targetType": "library"
+	},
+	{
+	  "name": "docs",
+	  "targetType": "executable"
 	}
+  ]
 }

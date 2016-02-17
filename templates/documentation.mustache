@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html class="docs-page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{title}}</title>
+    <title>{{name}} Documentation</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -13,16 +12,15 @@
     <div class="navbar-header">
         <label class="open-nav" for="open-nav"></label>
         <a class="navbar-brand" href="/">
-            <strong>Ramda</strong>
-            <span class="version">v0.19.1</span>
+            <strong>{{name}}</strong>
+            <span class="version">{{ver}}</span>
         </a>
     </div>
     <div class="navbar-left">
         <ul class="nav navbar-nav">
-            <li><a href="../">Home</a></li>
-            <li class="active"><a href="#">Documentation</a></li>
-            <li><a href="/repl?v=0.19.1">Try Ramda</a></li>
-            <li><a href="https://github.com/ramda/ramda">GitHub</a></li>
+            {{#links}}
+                <li class="{{active}}"><a href="{{url}}">{{text}}</a></li>
+            {{/links}}
         </ul>
     </div>
 </header>
