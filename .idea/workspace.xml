@@ -36,24 +36,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="doc.d" pinned="false" current-in-tab="true">
+      <file leaf-file-name="doc.d" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/doc.d">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <caret line="11" column="119" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home.md">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5" vertical-offset="0" max-vertical-offset="105">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.067567565" vertical-offset="0" max-vertical-offset="444">
+              <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -63,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/templates/page.mustache">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-9.375" vertical-offset="120" max-vertical-offset="585">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -129,6 +129,7 @@
         <option value="$PROJECT_DIR$/dub.json" />
         <option value="$PROJECT_DIR$/source/docs4d.d" />
         <option value="$PROJECT_DIR$/templates/page.mustache" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -632,12 +633,12 @@
       <option name="number" value="Default" />
       <updated>1455395858023</updated>
       <workItem from="1455395862437" duration="4293000" />
-      <workItem from="1455437772832" duration="30762000" />
+      <workItem from="1455437772832" duration="31073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35055000" />
+    <option name="totallyTimeSpent" value="35366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="31" width="1344" height="787" extended-state="0" />
@@ -757,17 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5" vertical-offset="0" max-vertical-offset="105">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/documentation.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.1666665" vertical-offset="185" max-vertical-offset="1725">
@@ -797,7 +787,7 @@
     <entry file="file://$PROJECT_DIR$/templates/page.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.375" vertical-offset="120" max-vertical-offset="585">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -805,7 +795,18 @@
     <entry file="file://$PROJECT_DIR$/source/doc.d">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <caret line="11" column="119" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.067567565" vertical-offset="0" max-vertical-offset="444">
+          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
           <folding />
         </state>
       </provider>
