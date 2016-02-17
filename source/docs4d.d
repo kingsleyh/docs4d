@@ -150,7 +150,9 @@ class DocGen
      }
 
      // make target dir
-     rmdirRecurse("docs");
+     if(exists("Docs")){
+       rmdirRecurse("docs");
+     }
      mkdir("docs");
      copy("resources/main.js","docs/main.js");
      copy("resources/style.css","docs/style.css");
