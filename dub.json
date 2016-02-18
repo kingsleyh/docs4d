@@ -1,8 +1,9 @@
 {
 	"name": "docs4d",
-	"description": "A minimal D application.",
-	"copyright": "Copyright © 2016, kings",
-	"authors": ["kings"],
+	"description": "External documentation generator for D code.",
+	"copyright": "Copyright © 2016, Kingsley Hendrickse",
+	"authors": ["Kingsley Hendrickse"],
+    "license": "BSL-1.0",
 	"dependencies": {
 	  "mustache-d": "~>0.1.1",
 	  "dmarkdown": "~>0.2.1"
