@@ -112,14 +112,14 @@ class DocGen
          subLinks["active"] = link.active;
      });
 
-     foreach (ref card; this.cards) {
+     foreach (ref card; this.cards.sort!((a,b)=> a.name.toLower() < b.name.toLower())) {
        auto sub = context.addSubContext("cards");
        sub["name"]        = card.name;
        sub["category"]    = card.category;
        sub["description"] = card.description;
 
        if(card.params.length > 0){
-         sub["signature"] = card.params.map!(p => p.type).join(" → ");
+         sub["signature"] = card.params.map!(p => p.type).join(" &#8594; ");
          sub.useSection("has_params");
 
          foreach(ref param ; card.params){
@@ -157,7 +157,7 @@ class DocGen
 
        if(!card.fileLocation.empty){
          sub.useSection("has_gh");
-         sub["gh"] = findGHLine(card);
+         sub["gh"] = this.githubUrl ~ "/" ~ card.fileLocation;
        }
 
      }
@@ -187,16 +187,6 @@ class DocGen
 
      }
 
-  }
-
-  private string findGHLine(Card card){
-    auto file = File(card.fileLocation);
-
-    auto methName = card.name == "new" ? "this" : card.name;
-
-    auto method = regex(r"^.+" ~ methName ~ r"\(*");
-    auto lineNumber = file.byLine().countUntil!(line => !!line.matchFirst(method));
-    return this.githubUrl ~ "/" ~ card.fileLocation ~ "#L" ~ to!string(lineNumber);
   }
 
 }

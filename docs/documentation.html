@@ -40,32 +40,18 @@
     </div>
     <ul class="nav nav-pills nav-stacked toc">
 
-        <li class="func" data-name="new" data-category="DocGen">
-            <a href="#new">
-                new
-                    <span data-category="DocGen" class="label label-category pull-right"
-                            >DocGen</span>
+        <li class="func" data-name="Card" data-category="Card">
+            <a href="#Card">
+                Card
+                    <span data-category="Card" class="label label-category pull-right"
+                            >Card</span>
             </a>
         </li>
-        <li class="func" data-name="withLinks" data-category="DocGen">
-            <a href="#withLinks">
-                withLinks
-                    <span data-category="DocGen" class="label label-category pull-right"
-                            >DocGen</span>
-            </a>
-        </li>
-        <li class="func" data-name="withCards" data-category="DocGen">
-            <a href="#withCards">
-                withCards
-                    <span data-category="DocGen" class="label label-category pull-right"
-                            >DocGen</span>
-            </a>
-        </li>
-        <li class="func" data-name="withPages" data-category="DocGen">
-            <a href="#withPages">
-                withPages
-                    <span data-category="DocGen" class="label label-category pull-right"
-                            >DocGen</span>
+        <li class="func" data-name="Example" data-category="Example">
+            <a href="#Example">
+                Example
+                    <span data-category="Example" class="label label-category pull-right"
+                            >Example</span>
             </a>
         </li>
         <li class="func" data-name="generate" data-category="void">
@@ -82,11 +68,11 @@
                             >Link</span>
             </a>
         </li>
-        <li class="func" data-name="Card" data-category="Card">
-            <a href="#Card">
-                Card
-                    <span data-category="Card" class="label label-category pull-right"
-                            >Card</span>
+        <li class="func" data-name="new" data-category="DocGen">
+            <a href="#new">
+                new
+                    <span data-category="DocGen" class="label label-category pull-right"
+                            >DocGen</span>
             </a>
         </li>
         <li class="func" data-name="Param" data-category="Param">
@@ -96,13 +82,6 @@
                             >Param</span>
             </a>
         </li>
-        <li class="func" data-name="Example" data-category="Example">
-            <a href="#Example">
-                Example
-                    <span data-category="Example" class="label label-category pull-right"
-                            >Example</span>
-            </a>
-        </li>
         <li class="func" data-name="ParamType" data-category="ParamType">
             <a href="#ParamType">
                 ParamType
@@ -110,310 +89,42 @@
                             >ParamType</span>
             </a>
         </li>
+        <li class="func" data-name="withCards" data-category="DocGen">
+            <a href="#withCards">
+                withCards
+                    <span data-category="DocGen" class="label label-category pull-right"
+                            >DocGen</span>
+            </a>
+        </li>
+        <li class="func" data-name="withLinks" data-category="DocGen">
+            <a href="#withLinks">
+                withLinks
+                    <span data-category="DocGen" class="label label-category pull-right"
+                            >DocGen</span>
+            </a>
+        </li>
+        <li class="func" data-name="withPages" data-category="DocGen">
+            <a href="#withPages">
+                withPages
+                    <span data-category="DocGen" class="label label-category pull-right"
+                            >DocGen</span>
+            </a>
+        </li>
 
     </ul>
 </aside>
 <main class="container-fluid">
 
-    <section class="card" id="new">
-        <h2>
-            <a tabindex="2" class="name" href="#new">new</a>
-                <span class="pull-right">
-                        <span class="label label-category">DocGen</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L76"><small class="glyphicon glyphicon-new-window"></small></a>
-                </span>
-        </h2>
-
-        <div><code>string → string → string → DocGen</code></div>
-
-        <div class="params" data-expanded="false">
-            <a href="#expand" class="toggle-params">Parameters</a>
-            <div class="details panel panel-default">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span class="type">string</span>
-                        <span class="name">name</span>
-                        <span class="description">(project name)</span>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="type">string</span>
-                        <span class="name">version</span>
-                        <span class="description">(project version)</span>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="type">string</span>
-                        <span class="name">githubUrl</span>
-                        <span class="description">(base url to github branch e.g. master)</span>
-                    </li>
-                </ul>
-                <div class="panel-body">
-                    <span class="returns">Returns</span>
-                    <span class="type">DocGen</span>
-                    <span class="description"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="description"><p>Creates a new instance of the DocGen class.</p>
-
-
-        </div>
-
-            
-	           <pre><code class="hljs javascript">new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;)
-     .withLinks(links)       
-     .withCards(cards)       
-     .withPages(pages)       
-     .generate();            
-</code></pre>
-        
-    </section>
-    <section class="card" id="withLinks">
-        <h2>
-            <a tabindex="2" class="name" href="#withLinks">withLinks</a>
-                <span class="pull-right">
-                        <span class="label label-category">DocGen</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L91"><small class="glyphicon glyphicon-new-window"></small></a>
-                </span>
-        </h2>
-
-        <div><code>Link[] → DocGen</code></div>
-
-        <div class="params" data-expanded="false">
-            <a href="#expand" class="toggle-params">Parameters</a>
-            <div class="details panel panel-default">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span class="type">Link[]</span>
-                        <span class="name">links</span>
-                        <span class="description">(an array of Link structs)</span>
-                    </li>
-                </ul>
-                <div class="panel-body">
-                    <span class="returns">Returns</span>
-                    <span class="type">DocGen</span>
-                    <span class="description"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="description"><p>Sets the links on the top navbar.</p>
-
-            <div class="see">
-             See also:
-            <ul>
-              <li><a href="#Link">Link</a></li>
-            </ul>
-            </div>
-
-        </div>
-
-            
-	           <pre><code class="hljs javascript">auto links = [                                                 
-      Link(&quot;Home&quot;,&quot;home.html&quot;),                            
-      Link(&quot;Documentation&quot;,&quot;#&quot;,&quot;active&quot;),                
-      Link(&quot;Github&quot;,&quot;https://github.com/kingsleyh/docs4d&quot;) 
-    ];                                                         
-new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;).withLinks(links);            
-</code></pre>
-        
-    </section>
-    <section class="card" id="withCards">
-        <h2>
-            <a tabindex="2" class="name" href="#withCards">withCards</a>
-                <span class="pull-right">
-                        <span class="label label-category">DocGen</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L85"><small class="glyphicon glyphicon-new-window"></small></a>
-                </span>
-        </h2>
-
-        <div><code>Card[] → DocGen</code></div>
-
-        <div class="params" data-expanded="false">
-            <a href="#expand" class="toggle-params">Parameters</a>
-            <div class="details panel panel-default">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span class="type">Card[]</span>
-                        <span class="name">cards</span>
-                        <span class="description">(an array of Card structs)</span>
-                    </li>
-                </ul>
-                <div class="panel-body">
-                    <span class="returns">Returns</span>
-                    <span class="type">DocGen</span>
-                    <span class="description"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="description"><p>Specifies the documentation for each item.</p>
-
-            <div class="see">
-             See also:
-            <ul>
-              <li><a href="#Card">Card</a></li>
-              <li><a href="#Param">Param</a></li>
-              <li><a href="#Example">Example</a></li>
-            </ul>
-            </div>
-
-        </div>
-
-            
-	           <pre><code class="hljs javascript">auto cards = [                                                                 
-       Card(&quot;new&quot;,&quot;Creates a new instance of the DocGen class.&quot;,&quot;DocGen&quot;,[ 
-         Param(&quot;string&quot;,&quot;name&quot;,&quot;(project name)&quot;,ParamType.INPUT),         
-         Param(&quot;string&quot;,&quot;version&quot;,&quot;(project version)&quot;,ParamType.INPUT),   
-         Param(&quot;DocGen&quot;,&quot;&quot;,&quot;&quot;,ParamType.OUTPUT)                           
-         ],[                                                                    
-           Example(                                                             
-           &quot;new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;)\n&quot;                             
-           &quot;     .withLinks(links)       \n&quot;                                 
-           &quot;     .withCards(cards)       \n&quot;                                 
-           &quot;     .withPages(pages)       \n&quot;                                 
-           &quot;     .generate();            \n&quot;                                 
-           )                                                                    
-         ],[Link(&quot;Card&quot;,&quot;#Card&quot;)])];                                        
-new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;).withCards(cards);                             
-</code></pre>
-        
-    </section>
-    <section class="card" id="withPages">
-        <h2>
-            <a tabindex="2" class="name" href="#withPages">withPages</a>
-                <span class="pull-right">
-                        <span class="label label-category">DocGen</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L97"><small class="glyphicon glyphicon-new-window"></small></a>
-                </span>
-        </h2>
-
-        <div><code>Page[] → DocGen</code></div>
-
-        <div class="params" data-expanded="false">
-            <a href="#expand" class="toggle-params">Parameters</a>
-            <div class="details panel panel-default">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span class="type">Page[]</span>
-                        <span class="name">pages</span>
-                        <span class="description">(an array of Page structs)</span>
-                    </li>
-                </ul>
-                <div class="panel-body">
-                    <span class="returns">Returns</span>
-                    <span class="type">DocGen</span>
-                    <span class="description"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="description"><p>Specifies additional pages.</p>
-
-            <div class="see">
-             See also:
-            <ul>
-              <li><a href="#Page">Page</a></li>
-              <li><a href="#Link">Link</a></li>
-            </ul>
-            </div>
-
-        </div>
-
-            
-	           <pre><code class="hljs javascript">auto pages = [                                               
-  Page(&quot;home.html&quot;,&quot;Home&quot;,[                              
-    Link(&quot;Home&quot;,&quot;home.html&quot;,&quot;active&quot;),                 
-    Link(&quot;Documentation&quot;,&quot;documentation.html&quot;),          
-    Link(&quot;Github&quot;,&quot;https://github.com/kingsleyh/docs4d&quot;) 
-    ],&quot;README.md&quot;)                                         
-];                                                           
-</code></pre>
-        
-    </section>
-    <section class="card" id="generate">
-        <h2>
-            <a tabindex="2" class="name" href="#generate">generate</a>
-                <span class="pull-right">
-                        <span class="label label-category">void</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L103"><small class="glyphicon glyphicon-new-window"></small></a>
-                </span>
-        </h2>
-
-
-        <div class="description"><p>generates the html files</p>
-
-
-        </div>
-
-
-    </section>
-    <section class="card" id="Link">
-        <h2>
-            <a tabindex="2" class="name" href="#Link">Link</a>
-                <span class="pull-right">
-                        <span class="label label-category">Link</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L20"><small class="glyphicon glyphicon-new-window"></small></a>
-                </span>
-        </h2>
-
-        <div><code>string → string → string → Link</code></div>
-
-        <div class="params" data-expanded="false">
-            <a href="#expand" class="toggle-params">Parameters</a>
-            <div class="details panel panel-default">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span class="type">string</span>
-                        <span class="name">text</span>
-                        <span class="description"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="type">string</span>
-                        <span class="name">url</span>
-                        <span class="description"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="type">string</span>
-                        <span class="name">active</span>
-                        <span class="description">(leave blank if link is not the active page, otherwise use text 'active')</span>
-                    </li>
-                </ul>
-                <div class="panel-body">
-                    <span class="returns">Returns</span>
-                    <span class="type">Link</span>
-                    <span class="description"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="description"><p>Struct that holds link information.</p>
-
-            <div class="see">
-             See also:
-            <ul>
-              <li><a href="#withLinks">withLinks</a></li>
-              <li><a href="#withPages">withPages</a></li>
-              <li><a href="#withCards">withCards</a></li>
-            </ul>
-            </div>
-
-        </div>
-
-            
-	           <pre><code class="hljs javascript">Link(&quot;Home&quot;,&quot;home.html&quot;)</code></pre>
-        
-    </section>
     <section class="card" id="Card">
         <h2>
             <a tabindex="2" class="name" href="#Card">Card</a>
                 <span class="pull-right">
                         <span class="label label-category">Card</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L13"><small class="glyphicon glyphicon-new-window"></small></a>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
                 </span>
         </h2>
 
-        <div><code>string → string → string → Param[] → Example[] → Card</code></div>
+        <div><code>string &#8594; string &#8594; string &#8594; Param[] &#8594; Example[] &#8594; Card</code></div>
 
         <div class="params" data-expanded="false">
             <a href="#expand" class="toggle-params">Parameters</a>
@@ -481,16 +192,180 @@ new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;).withCards(cards);
 </code></pre>
         
     </section>
+    <section class="card" id="Example">
+        <h2>
+            <a tabindex="2" class="name" href="#Example">Example</a>
+                <span class="pull-right">
+                        <span class="label label-category">Example</span>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+        <div><code>string &#8594; Example</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">string</span>
+                        <span class="name">code</span>
+                        <span class="description"></span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">Example</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="description"><p>Struct that holds example info.</p>
+
+
+        </div>
+
+            
+	           <pre><code class="hljs javascript">Example(&quot;auto doc = new DocGen(\&quot;Docs4d\&quot;,\&quot;v0.0.1\&quot;)&quot;)</code></pre>
+        
+    </section>
+    <section class="card" id="generate">
+        <h2>
+            <a tabindex="2" class="name" href="#generate">generate</a>
+                <span class="pull-right">
+                        <span class="label label-category">void</span>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+
+        <div class="description"><p>generates the html files</p>
+
+
+        </div>
+
+
+    </section>
+    <section class="card" id="Link">
+        <h2>
+            <a tabindex="2" class="name" href="#Link">Link</a>
+                <span class="pull-right">
+                        <span class="label label-category">Link</span>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+        <div><code>string &#8594; string &#8594; string &#8594; Link</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">string</span>
+                        <span class="name">text</span>
+                        <span class="description"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="type">string</span>
+                        <span class="name">url</span>
+                        <span class="description"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="type">string</span>
+                        <span class="name">active</span>
+                        <span class="description">(leave blank if link is not the active page, otherwise use text 'active')</span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">Link</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="description"><p>Struct that holds link information.</p>
+
+            <div class="see">
+             See also:
+            <ul>
+              <li><a href="#withLinks">withLinks</a></li>
+              <li><a href="#withPages">withPages</a></li>
+              <li><a href="#withCards">withCards</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+            
+	           <pre><code class="hljs javascript">Link(&quot;Home&quot;,&quot;home.html&quot;)</code></pre>
+        
+    </section>
+    <section class="card" id="new">
+        <h2>
+            <a tabindex="2" class="name" href="#new">new</a>
+                <span class="pull-right">
+                        <span class="label label-category">DocGen</span>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+        <div><code>string &#8594; string &#8594; string &#8594; DocGen</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">string</span>
+                        <span class="name">name</span>
+                        <span class="description">(project name)</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="type">string</span>
+                        <span class="name">version</span>
+                        <span class="description">(project version)</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="type">string</span>
+                        <span class="name">githubUrl</span>
+                        <span class="description">(base url to github branch e.g. master)</span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">DocGen</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="description"><p>Creates a new instance of the DocGen class.</p>
+
+
+        </div>
+
+            
+	           <pre><code class="hljs javascript">new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;)
+     .withLinks(links)       
+     .withCards(cards)       
+     .withPages(pages)       
+     .generate();            
+</code></pre>
+        
+    </section>
     <section class="card" id="Param">
         <h2>
             <a tabindex="2" class="name" href="#Param">Param</a>
                 <span class="pull-right">
                         <span class="label label-category">Param</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L18"><small class="glyphicon glyphicon-new-window"></small></a>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
                 </span>
         </h2>
 
-        <div><code>string → string → string → ParamType → Param</code></div>
+        <div><code>string &#8594; string &#8594; string &#8594; ParamType &#8594; Param</code></div>
 
         <div class="params" data-expanded="false">
             <a href="#expand" class="toggle-params">Parameters</a>
@@ -541,50 +416,12 @@ new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;).withCards(cards);
 	           <pre><code class="hljs javascript">Param(&quot;string&quot;,&quot;name&quot;,&quot;(project name)&quot;,ParamType.INPUT)</code></pre>
         
     </section>
-    <section class="card" id="Example">
-        <h2>
-            <a tabindex="2" class="name" href="#Example">Example</a>
-                <span class="pull-right">
-                        <span class="label label-category">Example</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L19"><small class="glyphicon glyphicon-new-window"></small></a>
-                </span>
-        </h2>
-
-        <div><code>string → Example</code></div>
-
-        <div class="params" data-expanded="false">
-            <a href="#expand" class="toggle-params">Parameters</a>
-            <div class="details panel panel-default">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span class="type">string</span>
-                        <span class="name">code</span>
-                        <span class="description"></span>
-                    </li>
-                </ul>
-                <div class="panel-body">
-                    <span class="returns">Returns</span>
-                    <span class="type">Example</span>
-                    <span class="description"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="description"><p>Struct that holds example info.</p>
-
-
-        </div>
-
-            
-	           <pre><code class="hljs javascript">Example(&quot;auto doc = new DocGen(\&quot;Docs4d\&quot;,\&quot;v0.0.1\&quot;)&quot;)</code></pre>
-        
-    </section>
     <section class="card" id="ParamType">
         <h2>
             <a tabindex="2" class="name" href="#ParamType">ParamType</a>
                 <span class="pull-right">
                         <span class="label label-category">ParamType</span>
-                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d#L29"><small class="glyphicon glyphicon-new-window"></small></a>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
                 </span>
         </h2>
 
@@ -616,6 +453,169 @@ new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;).withCards(cards);
 
             
 	           <pre><code class="hljs javascript">Param(&quot;string&quot;,&quot;name&quot;,&quot;(project name)&quot;,ParamType.INPUT)</code></pre>
+        
+    </section>
+    <section class="card" id="withCards">
+        <h2>
+            <a tabindex="2" class="name" href="#withCards">withCards</a>
+                <span class="pull-right">
+                        <span class="label label-category">DocGen</span>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+        <div><code>Card[] &#8594; DocGen</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">Card[]</span>
+                        <span class="name">cards</span>
+                        <span class="description">(an array of Card structs)</span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">DocGen</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="description"><p>Specifies the documentation for each item.</p>
+
+            <div class="see">
+             See also:
+            <ul>
+              <li><a href="#Card">Card</a></li>
+              <li><a href="#Param">Param</a></li>
+              <li><a href="#Example">Example</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+            
+	           <pre><code class="hljs javascript">auto cards = [                                                                 
+       Card(&quot;new&quot;,&quot;Creates a new instance of the DocGen class.&quot;,&quot;DocGen&quot;,[ 
+         Param(&quot;string&quot;,&quot;name&quot;,&quot;(project name)&quot;,ParamType.INPUT),         
+         Param(&quot;string&quot;,&quot;version&quot;,&quot;(project version)&quot;,ParamType.INPUT),   
+         Param(&quot;DocGen&quot;,&quot;&quot;,&quot;&quot;,ParamType.OUTPUT)                           
+         ],[                                                                    
+           Example(                                                             
+           &quot;new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;)\n&quot;                             
+           &quot;     .withLinks(links)       \n&quot;                                 
+           &quot;     .withCards(cards)       \n&quot;                                 
+           &quot;     .withPages(pages)       \n&quot;                                 
+           &quot;     .generate();            \n&quot;                                 
+           )                                                                    
+         ],[Link(&quot;Card&quot;,&quot;#Card&quot;)])];                                        
+new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;).withCards(cards);                             
+</code></pre>
+        
+    </section>
+    <section class="card" id="withLinks">
+        <h2>
+            <a tabindex="2" class="name" href="#withLinks">withLinks</a>
+                <span class="pull-right">
+                        <span class="label label-category">DocGen</span>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+        <div><code>Link[] &#8594; DocGen</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">Link[]</span>
+                        <span class="name">links</span>
+                        <span class="description">(an array of Link structs)</span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">DocGen</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="description"><p>Sets the links on the top navbar.</p>
+
+            <div class="see">
+             See also:
+            <ul>
+              <li><a href="#Link">Link</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+            
+	           <pre><code class="hljs javascript">auto links = [                                                 
+      Link(&quot;Home&quot;,&quot;home.html&quot;),                            
+      Link(&quot;Documentation&quot;,&quot;#&quot;,&quot;active&quot;),                
+      Link(&quot;Github&quot;,&quot;https://github.com/kingsleyh/docs4d&quot;) 
+    ];                                                         
+new DocGen(&quot;Docs4d&quot;,&quot;v0.0.1&quot;).withLinks(links);            
+</code></pre>
+        
+    </section>
+    <section class="card" id="withPages">
+        <h2>
+            <a tabindex="2" class="name" href="#withPages">withPages</a>
+                <span class="pull-right">
+                        <span class="label label-category">DocGen</span>
+                          <a target="_blank" title="View source on GitHub" href="https://github.com/kingsleyh/docs4d/blob/master/source/docs4d.d"><small class="glyphicon glyphicon-new-window"></small></a>
+                </span>
+        </h2>
+
+        <div><code>Page[] &#8594; DocGen</code></div>
+
+        <div class="params" data-expanded="false">
+            <a href="#expand" class="toggle-params">Parameters</a>
+            <div class="details panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="type">Page[]</span>
+                        <span class="name">pages</span>
+                        <span class="description">(an array of Page structs)</span>
+                    </li>
+                </ul>
+                <div class="panel-body">
+                    <span class="returns">Returns</span>
+                    <span class="type">DocGen</span>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="description"><p>Specifies additional pages.</p>
+
+            <div class="see">
+             See also:
+            <ul>
+              <li><a href="#Page">Page</a></li>
+              <li><a href="#Link">Link</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+            
+	           <pre><code class="hljs javascript">auto pages = [                                               
+  Page(&quot;home.html&quot;,&quot;Home&quot;,[                              
+    Link(&quot;Home&quot;,&quot;home.html&quot;,&quot;active&quot;),                 
+    Link(&quot;Documentation&quot;,&quot;documentation.html&quot;),          
+    Link(&quot;Github&quot;,&quot;https://github.com/kingsleyh/docs4d&quot;) 
+    ],&quot;README.md&quot;)                                         
+];                                                           
+</code></pre>
         
     </section>
 
