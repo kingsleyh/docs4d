@@ -2,6 +2,7 @@ module docs4d;
 
 import std.stdio;
 import std.file;
+import std.path;
 import mustache;
 import std.algorithm;
 import std.array;
@@ -73,13 +74,17 @@ class DocGen
   Mustache mustache;
   Mustache.Context context;
   string githubUrl;
+  string resourcePath;
+  string templatePath;
 
   this(string name, string ver, string githubUrl = ""){
      this.name = name;
      this.ver = ver;
      this.githubUrl = githubUrl;
      this.context = new Mustache.Context;
-     mustache.path  = "templates";
+     this.resourcePath = absolutePath(__FILE__).replace("source/docs4d.d","resources");
+     this.templatePath = absolutePath(__FILE__).replace("source/docs4d.d","templates");
+     mustache.path  = templatePath;
      mustache.level = Mustache.CacheLevel.no;
   }
 
@@ -161,16 +166,15 @@ class DocGen
        }
 
      }
-
      // make target dir
      if(exists("Docs")){
        rmdirRecurse("docs");
      }
      mkdir("docs");
-     copy("resources/main.js","docs/main.js");
-     copy("resources/style.css","docs/style.css");
+     copy(resourcePath ~ "/main.js","docs/main.js");
+     copy(resourcePath ~ "/style.css","docs/style.css");
      mkdir("docs/fonts");
-     copy("resources/fonts/glyphicons-halflings-regular.woff2","docs/fonts/glyphicons-halflings-regular.woff2");
+     copy(resourcePath ~ "/fonts/glyphicons-halflings-regular.woff2","docs/fonts/glyphicons-halflings-regular.woff2");
 
      std.file.write("docs/documentation.html",mustache.render("documentation", context));
 
